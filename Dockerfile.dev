@@ -1,0 +1,26 @@
+# Base image.
+FROM node:22.3.0-alpine
+
+# Set evironment variables.
+ENV LANG=C.UTF-8
+
+# Set Arguments.
+ARG NEXTJS_PORT
+
+# Set up working directory.
+WORKDIR /app
+
+# Copy package.json file to working directory.
+COPY /src/package.json .
+
+# Install packages.
+RUN npm install
+
+# Copy directory.
+COPY /src .
+
+# Document exposed port.
+EXPOSE ${NEXTJS_PORT}
+
+# Start app.
+CMD ["npm", "run", "dev"]
