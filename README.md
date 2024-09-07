@@ -9,9 +9,8 @@ YouTube: `https://www.youtube.com/watch?v=oKIThIihv60&t=11419s`
 Source: 'https://github.com/adrianhajdin/figma_clone'
 
 1. Intro
-2.
-2.
-3.
+2. Setup
+3. Liveblocks
 4.
 5.
 6.
@@ -24,6 +23,7 @@ Source: 'https://github.com/adrianhajdin/figma_clone'
 13.
 14.
 15.
+16.
 
 
 ## Next.js
@@ -50,3 +50,8 @@ Typescript: `Yes`; ESLint: `Yes`; Tailwind CSS: `Yes`; Use src/: `No`; App Route
 
 In 'src/'
 `$ touch .env.local`
+
+
+## Websites
+
+* liveblocks - `https://liveblocks.io`
