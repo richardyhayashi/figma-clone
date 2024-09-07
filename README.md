@@ -51,6 +51,10 @@ Typescript: `Yes`; ESLint: `Yes`; Tailwind CSS: `Yes`; Use src/: `No`; App Route
 In 'src/'
 `$ touch .env.local`
 
+#### Initialize Shadcn UI
+
+`$ npx shadcn@latest init`
+or follow website instructions
 
 ## Websites
 
