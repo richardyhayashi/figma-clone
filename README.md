@@ -12,7 +12,7 @@ Source: 'https://github.com/adrianhajdin/figma_clone'
 2. Setup
 3. Liveblocks
 4. File Structure & Shadcn
-5.
+5. Live Cursors
 6.
 7.
 8.
