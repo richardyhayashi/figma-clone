@@ -1,17 +1,17 @@
-'use client';
+"use client";
 
-import { ReactNode } from 'react';
+import { ReactNode } from "react";
 import {
   LiveblocksProvider,
   RoomProvider,
   ClientSideSuspense,
-} from '@liveblocks/react/suspense';
+} from "@liveblocks/react/suspense";
 
 export function Room({ children }: { children: ReactNode }) {
   return (
     <LiveblocksProvider
       publicApiKey={
-        'pk_dev_80wLFcO7kzoZ12zIAMbwP7m5mETQRIwvfID2RMKTLsni6V2MKU56xZyboMdedSy0'
+        "pk_dev_p564l2YbDtuTj7YOPDXzGbnBWGHnhEqvd7VpkVBbFOY0xsyjhLaRIH0j23T3tecG"
       }
     >
       <RoomProvider id="my-room">

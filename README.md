@@ -11,7 +11,7 @@ Source: 'https://github.com/adrianhajdin/figma_clone'
 1. Intro
 2. Setup
 3. Liveblocks
-4.
+4. File Structure & Shadcn
 5.
 6.
 7.
@@ -30,7 +30,7 @@ Source: 'https://github.com/adrianhajdin/figma_clone'
 
 ### Create App
 
-* Create NextJS App framework in src/ folder.
+* Create NextJS App framework in `src/` folder.
 `$ npx create-next-app@latest .`
 
 Choices:
@@ -55,6 +55,16 @@ In 'src/'
 
 `$ npx shadcn@latest init`
 or follow website instructions
+
+#### Install React Comments
+
+`$ npm i @liveblocks/react-comments`
+
+#### Drizzle & Neon
+
+`npm i drizzle-orm @ neondatabase/serverless dotenv`
+`npm i -D drizzle-kit`
+
 
 ## Websites
 
