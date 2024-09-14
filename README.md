@@ -13,7 +13,7 @@ Source: 'https://github.com/adrianhajdin/figma_clone'
 3. Liveblocks
 4. File Structure & Shadcn
 5. Live Cursors
-6.
+6. Reactions
 7.
 8.
 9.
