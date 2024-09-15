@@ -8,15 +8,15 @@ YouTube: `https://www.youtube.com/watch?v=oKIThIihv60&t=11419s`
 
 Source: 'https://github.com/adrianhajdin/figma_clone'
 
-1. Intro
-2. Setup
-3. Liveblocks
-4. File Structure & Shadcn
-5. Live Cursors
-6. Reactions
-7.
-8.
-9.
+01. Intro
+02. Setup
+03. Liveblocks
+04. File Structure & Shadcn
+05. Live Cursors
+06. Reactions
+07. Active Users
+08. Sidebars
+09.
 10.
 11.
 12.

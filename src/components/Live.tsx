@@ -1,12 +1,12 @@
-import { useMyPresence, useOthers } from "@/assets/liveblocks.config";
-import LiveCursors from "./cursor/LiveCursors";
-import { KeyboardEvent, useCallback, useEffect, useState } from "react";
-import CursorChat from "./cursor/CursorChat";
-import { CursorMode, CursorState, Reaction, ReactionEvent } from "@/types/type";
-import ReactionSelector from "./reaction/ReactionButton";
-import FlyingReaction from "./reaction/FlyingReaction";
-import useInterval from "@/hooks/useInterval";
-import { useBroadcastEvent, useEventListener } from "@liveblocks/react";
+import { useMyPresence, useOthers } from '@/assets/liveblocks.config';
+import LiveCursors from './cursor/LiveCursors';
+import { KeyboardEvent, useCallback, useEffect, useState } from 'react';
+import CursorChat from './cursor/CursorChat';
+import { CursorMode, CursorState, Reaction, ReactionEvent } from '@/types/type';
+import ReactionSelector from './reaction/ReactionButton';
+import FlyingReaction from './reaction/FlyingReaction';
+import useInterval from '@/hooks/useInterval';
+import { useBroadcastEvent, useEventListener } from '@liveblocks/react';
 
 const Live = () => {
   const others = useOthers();
@@ -112,16 +112,16 @@ const Live = () => {
 
   useEffect(() => {
     const onKeyUp = (e: KeyboardEvent) => {
-      if (e.key === "/") {
+      if (e.key === '/') {
         setCursorState({
           mode: CursorMode.Chat,
           previousMessage: null,
-          message: "",
+          message: '',
         });
-      } else if (e.key === "Escape") {
-        updateMyPresence({ message: "" });
+      } else if (e.key === 'Escape') {
+        updateMyPresence({ message: '' });
         setCursorState({ mode: CursorMode.Hidden });
-      } else if (e.key === "e") {
+      } else if (e.key === 'e') {
         setCursorState({
           mode: CursorMode.ReactionSelector,
         });
@@ -129,17 +129,17 @@ const Live = () => {
     };
 
     const onKeyDown = (e: KeyboardEvent) => {
-      if (e.key === "/") {
+      if (e.key === '/') {
         e.preventDefault();
       }
     };
 
-    window.addEventListener("keyup", onKeyUp);
-    window.addEventListener("keydown", onKeyDown);
+    window.addEventListener('keyup', onKeyUp);
+    window.addEventListener('keydown', onKeyDown);
 
     return () => {
-      window.removeEventListener("keyup", onKeyUp);
-      window.removeEventListener("keydown", onKeyDown);
+      window.removeEventListener('keyup', onKeyUp);
+      window.removeEventListener('keydown', onKeyDown);
     };
   }, [updateMyPresence]);
 
@@ -160,7 +160,7 @@ const Live = () => {
       onPointerUp={handlePointerUp}
       className="h-[100vh] w-full flex justify-center items-center text-center"
     >
-      <h1 className="text-2xl text-white">Liveblocks Figma Clone</h1>
+      <canvas />
 
       {reaction.map((r) => (
         <FlyingReaction
