@@ -16,7 +16,7 @@ Source: 'https://github.com/adrianhajdin/figma_clone'
 06. Reactions
 07. Active Users
 08. Sidebars
-09.
+09. Canvas
 10.
 11.
 12.
